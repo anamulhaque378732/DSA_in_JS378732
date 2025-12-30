@@ -1,0 +1,21 @@
+
+****---Big-O  natation---***
+ The worst case complexity of an algorithm is represented using the Big-O notation
+
+Big-O natation describes the complexity of an algorithm using algebraic terms .
+
+It has to important characteristics :
+a. It is expressed in terms of the input
+b. It focuses on the bigger picture without getting caught uo in the minute details
+ 
+
+
+Few points of note :
+
+*** Multiple algorithm exist for the same problem and there is no one right solution. Different algorithms work well under different constraints. **
+
+*** The same algorithm with the same programming language can be implemented in different ways. **
+
+*** When writing programs at work , don't lose sight of the big picture.  Rather than writing clever code, write code that is simple to read and maintain. **
+
+

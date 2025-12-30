@@ -1,0 +1,72 @@
+1... Algorithm: 
+An algorithm is a set of well-defined instruction to solve the particular problem.
+
+
+
+2...  Characteristics :
+ a. Well defined inputs and outputs
+b. each step should be clear and unambiguous
+c. language independent
+
+3... Why algorithm ?
+a. as a developer you are going to come across problem that you need to solve.
+
+ b. learning algorithm translate to learning different techniques to efficiently solve those problem.
+
+c. open problem can be solved in many ways using different algorithm.
+d. every algorithm comes with its own tradeoffs when it comes to performance.
+
+
+4... algorithm analysis contd :
+we evaluate performance of an algorithm in terms of its input size
+
+a. Time complexity : amount of time taken by an algorithm to run, as function of input size.
+
+b. Space complexity : Amount of memory taken by an algorithm to run, as function oi input size.
+
+
+By evaluating against the input size, the analysis is not only machine independent but the comparison is also appropriate.
+
+There is no one solution that works every single time, it is also always good to know multiple ways to solve the problem and use the best solution, giveb your constraints.
+
+ If Your app needs to be very quick and has plenty of memory to work with, you don't have to worry about space complexity.
+
+ If you have very little memory to work with, you should pick a solution that is relatively slower but needs less space.
+
+
+5... Hw to represent complexity ? 
+a. Asymptotic notation : Its mathematical tools to represent time and space complexity.
+
+5.1 Big-O Notation : (O-Notation) - Worst case complexity.
+5.2 Omega Notation - Best case complexity.
+
+5.3 Theta Notation : - Average case complexity
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
