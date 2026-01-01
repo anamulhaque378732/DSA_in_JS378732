@@ -67,17 +67,42 @@ function addSum(n) {
 /**
  * O(1) -constant
  * O(n)- linear
- * O(logn)- logarithmic
+ * O(log n)- logarithmic
  * 
  * 
  */
 
 
+function multipleArray(n) {
+  for (let i = 0; i <= n; i++) {
+    for (let j = 0; j <= n; j++) {
+      console.log(i, j);// n
+
+    };
+  };
+};
+// time complexity = n*82
 
 
+//console.log(multipleArray(5));
 
 
-
+/*
+* Constant don't matter
+* O(2n)= O(n)
+* O(100) = O(1)
+* O(19n**2) = O(n**2)
+*
+*
+*/
+/**
+ * Smaller terms don't matter
+ * O(n+10)= O(n)
+ * O(100n + 50)= O(n)
+ * O(n**2+5n+8)=o(n**2)
+ * 
+ * 
+ */
 
 
 
