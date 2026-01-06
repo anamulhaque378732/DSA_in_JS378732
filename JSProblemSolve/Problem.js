@@ -63,11 +63,59 @@ function characterCount(str) {
 
 };
 
-console.log(characterCount(character));
+//console.log(characterCount(character));
+
+function same(arr1, arr2) {
+    if (arr1.length !== arr2.length) {
+        return false
+    };
+    for (let i = 0; i < arr1.length; i++) {
+        let currentIndex = arr2.indexOf(arr1[i] ** 2);
+
+        if (currentIndex === -1) {
+            return false
+        };
+        arr2.splice(currentIndex, 1);
+    };
+    return true
+
+};
+
+// console.log(same([2, 3, 4], [4, 16, 9])); //O(n*n)
+
+// alternative solution
+
+function same2(arr1, arr2) {
+    if (arr1.length !== arr2.length) {
+        return false;
+    };
+
+    let sequenceCounter1 = {};
+    let sequenceCounter2 = {};
+
+    for (let value of arr1) {
+        sequenceCounter1[value] = sequenceCounter1[value] + 1 || 1
+
+    };
+    for (let value of arr2) {
+        sequenceCounter2[value] = sequenceCounter2[value] + 1 || 1
+
+    };
+
+    for (let key in sequenceCounter1) {
+        // console.log(key);
+        if (!(key ** 2) in sequenceCounter2) {
+            return false
+        };
 
 
+        if (sequenceCounter2[key ** 2] !== sequenceCounter1[key]) {
+            return false
+        };
+    };
 
+    return true
+};
 
-
-
+// console.log(same2([4, 5, 6], [16, 36, 25])); //O(n)
 
