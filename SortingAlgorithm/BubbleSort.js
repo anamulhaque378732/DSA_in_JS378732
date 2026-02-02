@@ -16,7 +16,7 @@ function bubbleSort(arr) {
     for (let i = 0; i < arr.length; i++) {
         isSwap = false;
         for (let j = 0; j < arr.length - 1; j++) {
-            console.log("to see", arr, arr[i], arr[j]);
+            // console.log("to see", arr, arr[i], arr[j]);
             // console.log(arr[j], arr[j + 1]);
             if (arr[j] > arr[j + 1]) {
                 let temp = arr[j];
