@@ -22,8 +22,8 @@ class SinglyLinkedList {
     };
 
     // push method
-
-    add(value) {
+    // time complexity = O(1);
+    addLast(value) {
         // let newNode = {
         //     value: value,
         //     next: null
@@ -41,6 +41,7 @@ class SinglyLinkedList {
     };
 
     // pop method
+    // time complexity = O(n)
     removeLastItem() {
         if (!this.head) {
             return null;
@@ -70,7 +71,7 @@ class SinglyLinkedList {
     };
 
     // shift method
-
+    // time complexity = O(1)
     removeFirstElement() {
 
         if (!this.head) {
@@ -89,7 +90,7 @@ class SinglyLinkedList {
     };
 
     // unShift method
-
+    // time complexity = O(1)
     addFirstElement(value) {
 
         // let newNode = {
@@ -109,14 +110,29 @@ class SinglyLinkedList {
         };
         this.length++;
     };
+    // show list
+    //  time complexity = O(n)
+    showList() {
+        let arr = [];
+        let currentNode = this.head;
+        while (currentNode) {
+            arr.push(currentNode.value);
+            currentNode = currentNode.next
+        };
+        return arr;
+    };
 };
 
+
 let list = new SinglyLinkedList();
+
+
+
 // ---- push method ----
-list.add(5)
-list.add(3)
-list.add(8)
-list.add("hello")
+list.addLast(5)
+list.addLast(3)
+list.addLast(8)
+list.addLast("hello")
 // console.log(list);
 
 
@@ -143,4 +159,6 @@ list.addFirstElement(8888);
 list.addFirstElement(888);
 list.addFirstElement(88);
 list.addFirstElement(8);
+list.addLast("anamul");
 console.log(list);
+console.log(list.showList());
